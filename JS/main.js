@@ -139,3 +139,15 @@ function capNhatSinhVien() {
   xuatThongTinVaoBang(danhSachSinhVien);
   luuLocalStorage();
 }
+
+function timSinhVien() {
+  document.getElementById("txtSearch").value =
+    "Function is under construction =)";
+  /* var tenSinhVienCanTim = document.getElementById("txtSearch").value.trim();
+  var danhSachSinhVienTimKiem = [];
+  var sinhVienTimThay = danhSachSinhVien.find(function (item) {
+    return item.tenSV.match(tenSinhVienCanTim);
+  });
+  danhSachSinhVienTimKiem.push(sinhVienTimThay)
+  xuatThongTinVaoBang(danhSachSinhVienTimKiem) */
+}
