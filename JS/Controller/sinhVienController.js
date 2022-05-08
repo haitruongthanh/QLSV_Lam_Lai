@@ -2,9 +2,9 @@ function layThongTinTuForm() {
   var maSV = document.getElementById("txtMaSV").value;
   var tenSV = document.getElementById("txtTenSV").value;
   var emailSV = document.getElementById("txtEmail").value;
-  var diemToan = document.getElementById("txtDiemToan").value*1;
-  var diemLy = document.getElementById("txtDiemLy").value*1;
-  var diemHoa = document.getElementById("txtDiemHoa").value*1;
+  var diemToan = document.getElementById("txtDiemToan").value * 1;
+  var diemLy = document.getElementById("txtDiemLy").value * 1;
+  var diemHoa = document.getElementById("txtDiemHoa").value * 1;
 
   var sinhVien = new SinhVien(maSV, tenSV, emailSV, diemToan, diemLy, diemHoa);
 
@@ -22,8 +22,12 @@ function xuatThongTinVaoBang(arrayDSSV) {
     <td>${sinhVien.emailSV}</td>
     <td>${sinhVien.tinhDiemTrungBinh()}</td>
     <td>
-    <button type="button" class="btn btn-success" onclick="suaSinhVien(${sinhVien.maSV})">Sửa</button>
-    <button type="button" class="btn btn-danger" onclick="xoaSinhVien(${sinhVien.maSV})">Xóa</button>
+    <button type="button" class="btn btn-success" onclick="suaSinhVien(${
+      sinhVien.maSV
+    })">Sửa</button>
+    <button type="button" class="btn btn-danger" onclick="xoaSinhVien(${
+      sinhVien.maSV
+    })">Xóa</button>
     </td>
   </tr>
     `;
