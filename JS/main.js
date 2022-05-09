@@ -142,32 +142,11 @@ function capNhatSinhVien() {
 
 function timSinhVien() {
   var tenSinhVienCanTim = document.getElementById("txtSearch").value.trim();
-  var danhSachSinhVienTimKiem = [];
 
   var sinhVienTimThay = danhSachSinhVien.filter(function (item) {
     return item.tenSV.toUpperCase().includes(tenSinhVienCanTim.toUpperCase());
   });
-  danhSachSinhVienTimKiem.push(sinhVienTimThay);
-  /* var dssvtkJson = JSON.stringify(danhSachSinhVienTimKiem);
-  localStorage.setItem("DSSVTK_localStorage", dssvtkJson);
-  
-  dssvtkJson = localStorage.getItem("DSSVTK_localStorage");
-
-  if (dssvtkJson) {
-    danhSachSinhVienTimKiem = JSON.parse(dssvtkJson);
-    danhSachSinhVienTimKiem = danhSachSinhVienTimKiem.map(function (item) {
-      return new SinhVien(
-        item.maSV,
-        item.tenSV,
-        item.emailSV,
-        item.diemToan,
-        item.diemLy,
-        item.diemHoa
-      );
-    });
-    xuatThongTinVaoBang(danhSachSinhVienTimKiem);
-  } */
-  xuatThongTinVaoBang(danhSachSinhVienTimKiem);
+  xuatThongTinVaoBang(sinhVienTimThay);
 }
 
 function resetForm() {

@@ -49,6 +49,7 @@ var ValidatorSv = function () {
     document.getElementById(idError).innerText = "Tên không hợp lệ";
     return false;
   };
+  
   this.kiemTraDiem = function (idTarget, idError) {
     var number = /^[0-9]+$/;
     var valueInput = document.getElementById(idTarget).value;
